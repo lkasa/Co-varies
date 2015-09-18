@@ -1,0 +1,9 @@
+Please let me know when the build is ready for Outbrain testing.  There are some standout problems, such as 5 request per widget on the first article opened from the homepage.
+
+I installed this build on a Nexus 4 and I see SDK_6 and SDK_3.  On Nexus 6, I see SDK_4 and SDK_1.
+
+Here are some pointers for the client:
+- Widgets cannot be preloaded.  There should be one unique request per widget per page.
+
+[Internal Notes]
+If these widgets will be subject to guarantee, they should not be requested until the user has clicked "More from CNN" and the drawer is visible.
